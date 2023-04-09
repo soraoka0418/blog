@@ -1,5 +1,3 @@
-import type { IncomingMessage, ServerResponse } from 'http'
-
 export interface User {
   id: number;
   name: string;
@@ -24,7 +22,7 @@ export interface User {
   };
 };
 
-export default async (req: IncomingMessage, res: ServerResponse) => {
+export default async () => {
   const result: User[] = await $fetch('https://jsonplaceholder.typicode.com/users')
   return result
 }

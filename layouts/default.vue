@@ -2,13 +2,10 @@
 <template>
   <v-app>
     <v-app-bar color="primary">
-      <!-- <template v-slot:prepend>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      </template> -->
-      <v-app-bar-title> Nuxt3 Practice </v-app-bar-title>
+      <v-app-bar-title> Learn Nuxt3 </v-app-bar-title>
       <template v-slot:append>
         <v-btn :to="'/'" class="mr-2">
-          <v-icon> mdi-home </v-icon>
+          <v-icon> mdi-book </v-icon>
         </v-btn>
         <v-btn :to="'/user'">
           <v-icon> mdi-account </v-icon>
