@@ -9,15 +9,17 @@ const { data } = await useFetch("/blogs", {
 </script>
 
 <template>
-  <v-row dense>
-    <v-col cols="4">
+  <v-container>
+    <v-row no-gutters>
       <template v-for="article in data.contents" :key="article.id">
-        <nuxt-link :to="`/${article.id}`">
-          <v-card class="pa-5">
-            <v-card-text>{{ article.title }}</v-card-text>
-          </v-card>
-        </nuxt-link>
+        <v-col cols="12" sm="4">
+          <nuxt-link :to="`/${article.id}`">
+            <v-card height="150px" class="pa-5 ma-2">
+              <v-card-text>{{ article.title }}</v-card-text>
+            </v-card>
+          </nuxt-link>
+        </v-col>
       </template>
-    </v-col>
-  </v-row>
+    </v-row>
+  </v-container>
 </template>
