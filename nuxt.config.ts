@@ -8,5 +8,8 @@ export default defineNuxtConfig({
       baseURL: process.env.NUXT_BASE_URL,
       apiKey:  process.env.NUXT_API_KEY,
     },
+  },
+  typescript: {
+    strict: true
   }
 });
