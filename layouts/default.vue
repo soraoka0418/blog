@@ -7,8 +7,11 @@
         <v-btn :to="'/'" class="mr-2">
           <v-icon> mdi-book </v-icon>
         </v-btn>
-        <v-btn :to="'/user'">
+        <v-btn :to="'/user'" class="mr-2">
           <v-icon> mdi-account </v-icon>
+        </v-btn>
+        <v-btn :to="'/count'" class="mr-2">
+          <v-icon>mdi-counter </v-icon>
         </v-btn>
       </template>
     </v-app-bar>
