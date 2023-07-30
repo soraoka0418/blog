@@ -9,18 +9,6 @@ const { data } = await useFetch("/blogs", {
 </script>
 
 <template>
-  <v-container>
-    <h2>Learn MicroCMS</h2>
-    <v-row no-gutters>
-      <template v-for="article in data.contents" :key="article.id">
-        <v-col cols="12" sm="4">
-          <nuxt-link :to="`/${article.id}`">
-            <v-card height="150px" class="pa-5 ma-2">
-              <v-card-text>{{ article.title }}</v-card-text>
-            </v-card>
-          </nuxt-link>
-        </v-col>
-      </template>
-    </v-row>
-  </v-container>
+  <BasePageTitle title="Learn MicroCMS" />
+  <BlogList :blogs="data.contents" />
 </template>

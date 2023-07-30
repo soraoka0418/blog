@@ -1,6 +1,5 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <h2>blog記事</h2>
+  <BasePageTitle title="blog記事" />
 </template>

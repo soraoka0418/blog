@@ -6,10 +6,15 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
   },
   "devDependencies": {
-    "nuxt": "^3.3.3"
+    "@vue/test-utils": "^2.4.1",
+    "jsdom": "^22.1.0",
+    "nuxt": "^3.3.3",
+    "unplugin-auto-import": "^0.16.6",
+    "vitest": "^0.33.0"
   },
   "dependencies": {
     "mdi": "^2.2.43",
