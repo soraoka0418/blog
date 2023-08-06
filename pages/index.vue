@@ -9,6 +9,6 @@ const { data } = await useFetch("/blogs", {
 </script>
 
 <template>
-  <BasePageTitle title="Learn MicroCMS" />
+  <BasePageTitle title="Blog" />
   <BlogList :blogs="data.contents" />
 </template>
