@@ -10,15 +10,18 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "@types/chart.js": "^2.9.38",
     "@vue/test-utils": "^2.4.1",
     "jsdom": "^22.1.0",
-    "nuxt": "^3.3.3",
+    "nuxt": "^3.7.4",
     "unplugin-auto-import": "^0.16.6",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.6"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
     "mdi": "^2.2.43",
-    "sass": "^1.61.0",
-    "vuetify": "^3.1.13"
+    "sass": "^1.69.3",
+    "vue-chartjs": "^5.2.0",
+    "vuetify": "^3.3.21"
   }
 }

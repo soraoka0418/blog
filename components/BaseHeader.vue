@@ -12,6 +12,10 @@ const navItem = [
     link: "/count",
     icon: "mdi-counter",
   },
+  {
+    link: "/chart",
+    icon: "mdi-chart-bar",
+  },
 ];
 </script>
 <template>
